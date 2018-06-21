@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew's Resume</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/JavaScript" src="assets/js/passTheBar.js"></script>
+
+
+    <link rel="stylesheet" href="assets/my.css">
+
+
+</head>
+
+<body class="grey lighten-4">
+    <div id="nav">
+        <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="nav-wrapper container">
+
+                    <a href="#welcome" class="brand-logo
+                            ">&nbsp;Andrew Hase</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <i class="mdi-navigation-menu"></i>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <nav>
+        <a name="welcome" class="anchor"></a>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="#" class="brand-logo right">
+                <i id="sleep" class=""></i>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Have a smily face when during work hours -->
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a href="#welcome">Welcome</a>
+                </li>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#experince">Experience</a>
+                </li>
+                <li>
+                    <a href="#work">Work Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul id="mobile-demo" class="sidenav">
+        <li>
+            <a href="#welcome">Welcome</a>
+        </li>
+        <li>
+            <a href="#about">About Me</a>
+        </li>
+        <li>
+            <a href="#experince">Experience</a>
+        </li>
+        <li>
+            <a href="#work">Work Experience</a>
+        </li>
+        <li>
+            <a href="#education">Education</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <!-- main content -->
+    <div id="push"></div>
+    <section class="valign-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col l6">
+                    <h2 id="welcomeMessage" class="pink-text text-darken-3"></h2>
+                    <h4 class="grey-text text-darken-4">Thanks for stopping by</h4>
+                    <p class="">My name is Andrew Hase and I am a Systems Administrator and all-round tinkerer. I work predominately
+                        with web design, web development, including WordPress plugins and theming, JavaScript and whatever
+                        I need to do to get my current project working.</p>
+                    <p> I currently work heavily with enterprise hardware for data storage and virtualization. I really enjoy
+                        getting new projects off the ground especially ones that involve large amounts of end user interaction
+                        to help the system grow. For example, in my current job I have redone our intranet page to get users
+                        to engage with the articles and processes and produce their own articles for future users. I have
+                        done this by integrating a number of plugins, custom written plugins and child themes and the integration
+                        of discourse. My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work
+                        a lot with web design, web dev, including wordpress plugins and theming, javascript and whatever
+                        I need to do to get it working.
+                    </p>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/img/drew.png">
+                            <span class="card-title white-text text-darken-4 z-depth-2">
+                                <b>Me, Myself and I</b>
+                            </span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light pink">
+                                <i style="color:white;" class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>In my spare time I fancy myself awesome at photoshop</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="pink-text" href="#">Download CV?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container" id="about" class="section scrollspy">
+        <a name="about" class="anchor"></a>
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="col l4 m8 s12">
+                <div class="centerIcon">
+                    <i style="color:#4db6ac" class="fas fa-server fa-7x"></i>
+                </div>
+                <h4>Computer Lover</h4>
+                <p>Currently employed as a Systems Administrator in Brisbane. I work with VMware, Windows Servers, Win Exchange
+                    and Linux. I also am the proud owner of a number ardunio's, raspberryPi's, bread boards, wires and a
+                    large array of LED lights. I really like making LED lights flash. </p>
+            </div>
+            <div class="col l4 m8 s12">
+                <div class="centerIcon">
+                    <i style="color:#4db6ac" id="devIcons" class=""></i>
+                </div>
+                <h4>Developer</h4>
+                <p>I enjoy the problem solving in development. Please feel free to check out my github. I get a lot out of programming
+                    and learning a new Languages. Currently I have experience in:
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Php</li>
+                        <li>C#</li>
+                        <li>.Net</li>
+                    </ul>
+                    I have dabbled briefly in many more.
+                </p>
+
+            </div>
+            <div class="col l4 m8 s12">
+                <!-- <i style="color:#4db6ac" class="fab fa-ethereum fa-7x"></i> -->
+                <div class="centerIcon">
+                    <img id="rasp" style="height: 7em; width: 7em; color:#4db6ac" src="assets/img/raspPi.png">
+                </div>
+                <h4>Hobbies</h4>
+                <p>I am an all round tinkerer. I enjoy working on silly raspberry pi projects. I also enjoy tinkering with websites
+                    and new technologies. When I am not in the IT world, I like to abandon it completely by hiking mountains
+                    or going on larger 3 day hikes. I was an avid climber until I broke my knee a few years ago about still
+                    enjoy it from time to time.I am an all round tinkerer. I enjoy to work on silly raspberry pi projects.
+                    I also enjoy tinkering with websites and new technologies. When I am not in the IT world, I like to abandon
+                    it completly by hiking mountains or going on larger 3 day hikes. I was an avid climber until I broke
+                    my knee a few years ago about still enjoy it from time to time.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container" id="experince" class="section scrollspy">
+        <h1>Experience</h1>
+        <a name="experince" class="anchor"></a>
+        <div class="row">
+            <h4>Developer Experience</h4>
+            <div class="contianer">
+                <h5>JS</h5>
+                <br>
+                <div id="outerJS" class="progress yellow">
+                    <div id="fullJS" class="determinate yellow darken-2" style="width: 70%"></div>
+                </div>
+                <br>
+                <h5>HTML</h5>
+                <br>
+                <div id="outerHTML" class="progress orange lighten-2">
+                    <div id="fullHTML" class="determinate orange darken-3" style="width: 95%"></div>
+                </div>
+                <br>
+                <h5>CSS</h5>
+                <br>
+                <div id="outerCSS" class="progress blue lighten-3">
+                    <div id="fullCSS" class="determinate blue darken-3"></div>
+                </div>
+                <br>
+                <h5>PHP</h5>
+                <br>
+                <div onmouseover="phpHoverOuter" id="outerPHP" class="progress purple lighten-3">
+                    <div id="fullPHP" class="determinate purple darken-3"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row" id="work" class="section scrollspy">
+            <h3>Work Experince</h3>
+            <a name="work" class="anchor"></a>
+
+            <ul class="collapsible expandable">
+                <li>
+                    <div class="collapsible-header teal lighten-4">
+                        <i class="far fa-building"></i>Bornhorst & Ward</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <b>Role:</b> Systems Administrator, I mostly took care of automating tasks, managing backups in
+                            a Windows enviroment. While working for BW I took over the sole Linux Server and creeated a bunch
+                            more to serve as FileServers, WebHosts and more. A lot of experince with VMWare, Ubuntu, SusE
+                            and Mint. I performed all aspects of Sysadmin.
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>VMware</li>
+                                            <li>WinServers</li>
+                                            <li>WinCoreServer</li>
+                                            <li>Linux</li>
+                                            <li>Exchange</li>
+                                            <li>Disk Management</li>
+                                            <li>Manage Help Desk Staff</li>
+                                            <li>Writing Web Apps and Standalone Apps</li>
+                                            <li>Wordpress Dev</li>
+
+                                        </ul>
+                                    </td>
+
+                                    <td>
+                                        <ul>
+                                            <li>Adding new features to asp and aspx software</li>
+                                            <li>Front end changes to programs</li>
+                                            <li>Intergrating Linux in Windows AD enviroment</li>
+                                            <li>MYSQL/MSSQL database maintance</li>
+                                            <li>Automate Window Management .bat .ps1</li>
+                                            <li>Linux and Windows File Server Management</li>
+                                            <li>Intergrating old .Net Web Apps into Wordpress</li>
+                                            <li>Adding lots of little javascript into the mix</li>
+                                            <li>Bug Hunting</li>
+                                            <li>Inventory Management</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+
+
+
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header  teal lighten-4">
+                        <i class="fas fa-building"></i>Queensland Academy of Creative Industies</div>
+                    <div class="collapsible-body">
+                        <span>First opportunity to work with Mac's as Qaci is a Mac school. Worked in the help desk for the local
+                            Sysadmin.
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Mac Laptop/Desktop(The bin)/Server Support</li>
+                                            <li>Window Servers</li>
+                                            <li>Orange Card for EDQ</li>
+                                            <li>Projectors, Apple TV, other miscellaneous thech items for troubleshooting</li>
+                                            <li>Ran support for IB progfessional development conference</li>
+                                            <li>Minor programming operations</li>
+                                            <li>Inventory Management</li>
+                                            <li>Scripting and Package Creation (.dmg & .pkg)</li>
+                                            <li>Marketing; Video, media editing and creation</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header teal lighten-4">
+                        <i class="far fa-building"></i>Data#3</div>
+                    <div class="collapsible-body">
+                        <span>Was part of the roll out team initially before I was quickly promoted to Support. I flew all over
+                            Queensland to have tea and scones with Govt workers and teach them about windows 10. 10/10 would
+                            do again.
+                            <ul>
+                                <li>Large Scale Office Rollouts</li>
+                                <li>Managed own team</li>
+                                <li>Trouble Shooting</li>
+                                <li>Adobe Premier Pro Work</li>
+                                <li>Adobe PhotoShop Work</li>
+                            </ul>
+
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header teal lighten-4">
+                        <i class="fas fa-building"></i>Free Lance Web Dev
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Created websites and manage hosting for a varity of small businesses. I am slowly closing this section
+                            of my life down as working full time means hosting only is the way to get the desired work life
+                            balance.
+                            <br>
+                            <b>Some Larger Projects:</b>
+                            <ul>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://ricsbar.com.au/">Rics Bar</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://royalgeorgehotel.com.au/">Royal Geogre</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://lutece.com.au/">Lutece Bistro & Winebar</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://www.brunswickandann.com.au/">Brunswick & Ann</a>
+                                </li>
+                            </ul>
+
+
+
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+            <a name="education" class="anchor"></a>
+            <h1>Education</h1>
+
+            <div class="col s12 m6 l6">
+                <h4>Tertiary Education</h4>
+                <ul>
+                    <li>Bachelor of International Business</li>
+                    <li>Languages - German Mandarin</li>
+                </ul>
+            </div>
+            <div class="col s12 m6 l6">
+                <h4>Informal Education</h5>
+                    <ul>
+                        <li>CS50 - EDX</li>
+                        <li>Code Academy</li>
+
+                    </ul>
+            </div>
+            <span class="col s12 center-align">
+                <button class="btn pink waves-effect waves-light" onclick="more()">More</button>
+            </span>
+
+
+        </div>
+        <div id="more" class="row center-align" style="display: none;">
+            <div class="col s12 m12 l12">
+                <h4>Skills in Programms</h4>
+                <ul>
+                    <li>
+                        <b>Suites:</b> Gimp, Photoshop, inDesign, MSoffice, Libreoffice etc</li>
+                    <li>VsCode, VsStudio, PhpStorm, AutoCad, Inventor, Revit</li>
+
+                    <li>
+                        <b>CMS Experince:</b> Wordpress, Joomla, Drupal, Virtumart,</li>
+                    <li>WooCommerce, Discourse, OwnCloud, NextCloud</li>
+                    <li>
+                        <b>Linux:</b> Ubuntu, SuSe, Mint, Debain, Noobs, Rasbian </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer class="page-footer teal lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l8 m8 s12">
+                    <h5 class="grey-text text-darken-3">Contact Me</h5>
+                    <a name="contact" class="anchor"></a>
+                    <p class="grey-text text-darken-3">Please Feel Free To Contact Me</p>
+                    <form class="col l6 m6 s6" method="POST" action="form.php" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="input-field col l6 s6">
+                                <input name='firstName' id="firstName" type="text" class="validate" required>
+                                <label for="firstName">First Name</label>
+                            </div>
+                            <div class="input-field col l6 s6">
+                                <input name="lastName" id="lastName" type="text" class="validate">
+                                <label for="lastName">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col l6 s6">
+                                <input name="emailForm" id="emailForm" type="email" class="validate" required>
+                                <label for="emailForm">Email</label>
+                            </div>
+                            <div class="input-field col l6 s6">
+                                <input name="telno" id="telno" type="tel" class="validate" pattern="^0[0-9]{9}">
+                                <label for="telno">Number</label>
+                                <span class="helper-text" data-error="Enter your number in long form eg: 0733334444" data-success="right"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col l12 s12">
+                                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Please Write your message here</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="btn waves-effect pink" type="submit">Submit</button>
+                            <button class="btn waves-effect pink lighten-2" type="reset">Reset</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+
+
+                <div class="row col l2">
+                    <h5 class="grey-text text-darken-3">Links</h5>
+                    <ul>
+                        <li>
+                            <a target="_blank" class="pink-text text-lighten-1" href="https://github.com/oldManLemon">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="pink-text text-lighten-1" href="https://www.linkedin.com/in/andrew-hase-047834b2/">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-copyright teal">
+            <div class="container">
+                © 2018 Copyright Andrew
+                <a class="grey-text text-lighten-4 right" href="http://www.devilsdetailsdesigns.com.au/resume/">Just for fun, my old resume site!</a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- <div class="row">
+        <div class="col hide-on-small-only m3 l2">
+            <ul class="section table-of-contents">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experince">Experince</a>
+                </li>
+                <li>
+                    <a href="#work">Work Experince</a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+
+</body>
+<script type="text/JavaScript" src="assets/js/alternate.js"></script>
+<script type="text/JavaScript" src="assets/js/time.js"></script>
+<script type="text/JavaScript" src="assets/js/more.js"></script>
+<script>
+
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+        accordion: false
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems,
+            { scrollOffsett: 100 });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+
+</script>
+
+
+</html>
